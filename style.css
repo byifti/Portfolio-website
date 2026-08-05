@@ -1,0 +1,71 @@
+:root 
+{
+   --orange: #d8873f ;
+   --default-font: 1.15rem;
+   --bg-color-dark: #032442;
+   --font-color: #FFECD6;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--bg-color-dark);
+    color: var(--font-color);
+  }
+}
+
+*
+{
+   font-family: Inria Sans;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+p 
+{
+   margin-bottom: 0.25rem;
+   font-size: 1.25rem;
+   line-height: 1/75rem;
+
+}
+
+#locationText
+{
+   opacity: 0.75;
+}
+
+.icons 
+{
+   margin-top: 1.5rem;
+   margin-right: 0.5rem;
+   height: 2.5rem;
+   width: 2.5rem;
+   color: var(--font-color);
+
+}
+
+.links
+{
+   text-decoration: none;
+}
+
+#introContainer
+{
+   width: 25rem;
+   margin-left: 4rem;
+   margin-top: 4rem;
+   text-align: left;
+   font-size: var(--default-font);
+}
+
+h1
+{
+   font-size: 5rem;
+   letter-spacing: 0.0625rem;
+}
+
+
+#identityTitle
+{
+   color: var(--orange);
+}
