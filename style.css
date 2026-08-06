@@ -25,7 +25,6 @@ p
 {
    margin-bottom: 0.25rem;
    font-size: 1.25rem;
-   line-height: 1/75rem;
 
 }
 
@@ -34,19 +33,25 @@ p
    list-style: none;
 }
 
+#navBar
+{
+   text-align: right;
+   margin-right: 2.5rem;
+   margin-top: 1.75rem;
+   font-size: 1.35rem;
+   word-spacing: 0.75rem;
+}
+
+#navLinks li
+{  
+   display: inline-block;
+
+}
+
+
 #locationText
 {
    opacity: 0.75;
-}
-
-.icons 
-{
-   margin-top: 1.5rem;
-   margin-right: 0.5rem;
-   height: 2.5rem;
-   width: 2.5rem;
-   color: var(--font-color);
-
 }
 
 .links, links:visited
@@ -59,7 +64,7 @@ p
 {
    width: 25rem;
    margin-left: 4rem;
-   margin-top: 4rem;
+   margin-top: 1rem;
    text-align: left;
    font-size: var(--default-font);
 }
@@ -75,3 +80,22 @@ h1
 {
    color: var(--orange);
 }
+
+.icons 
+{
+   margin-top: 1.5rem;
+   margin-right: 0.75rem;
+   height: 2rem;
+   width: 2rem;
+   color: var(--font-color);
+   transition: color 0.15s ease-in-out;
+
+}
+
+.icons:hover 
+{
+
+   color: var(--orange);
+
+}
+
