@@ -29,6 +29,11 @@ p
 
 }
 
+#navLinks
+{
+   list-style: none;
+}
+
 #locationText
 {
    opacity: 0.75;
@@ -44,9 +49,10 @@ p
 
 }
 
-.links
+.links, links:visited
 {
    text-decoration: none;
+   color: var(--font-color);
 }
 
 #introContainer
