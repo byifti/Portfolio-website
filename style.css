@@ -25,6 +25,9 @@
 {
    height: 100vh;
    width: 100%;
+   display: flex;
+   flex-direction: column;
+   overflow: hidden;
 }
 
 #navLinks
@@ -44,25 +47,37 @@
 #navLinks li
 {  
    display: inline-block;
+   transition: 0.1s ease-in-out;
 
+}
+
+#navLinks li:nth-child(n+2) /*Targeting 2nd child and onwards of list*/
+{
+   opacity: 60%;
+}
+
+#navLinks li:nth-child(n+2):hover
+{
+   opacity: 80%;
 }
 
 #introContainer
 {
    width: 30rem;
-   margin-left: 4rem;
-   margin-top: 1rem;
+   margin-left: 5.25rem;
+   margin-top: 1.5rem;
    text-align: left;
    font-size: var(--default-font);
 }
 
 #socialsContainer 
 {
-   margin-left: 4rem;
+   margin-left: 5.25rem;
 }
 
 h1
 {
+   transform: translateX(-0.0625em); /*The heading isnt perfectly aligned so doing this*/
    font-size: 6rem;
    letter-spacing: 0.075rem;
 }
@@ -109,4 +124,55 @@ p
 
    color: var(--orange);
 
+}
+
+#artContainer 
+{
+   position: relative;
+   width: min(100%, 700px);
+   height: clamp(250px, 40vw, 450px);
+   margin-top: 2rem;
+   margin-left: auto;   
+
+}
+
+#sunBtn 
+{ 
+   background: none;
+   margin-left: auto;
+   border-radius: 50%;
+   z-index: 1;
+   border: none;
+   cursor: pointer;
+   position: absolute;
+   left: 50%;
+   bottom: 0;
+   transform: translateX(-50%);
+   width: 90%;;
+   filter: drop-shadow(0 0 35px rgba(242, 147, 62, 0.6));
+   transition: 0.1s ease-in;
+}
+
+#sunBtn:hover
+{
+   filter: drop-shadow(0 0 43px rgba(242, 147, 62, 0.8));
+}
+
+#mountainSVG
+{
+   pointer-events: none;
+   z-index: 2;
+   position: absolute;
+   left: 50%;
+   bottom: 0;
+   transform: translateX(-50%);
+   width: 90%;
+
+}
+
+#sunBtn svg,
+#mountainSVG {
+   width: 100%;
+   height: auto;
+   display: block;
 }
